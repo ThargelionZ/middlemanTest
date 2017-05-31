@@ -1,0 +1,14 @@
+bundle install
+
+link_to can also take a bock, allowing you to provide more complex content for the link:
+
+<%= link_to 'My Site', 'http://mysite.com' %>
+
+<%= link_to 'http://mysite.com' do %>
+    <%= image_tag 'http://www.ldoceonline.com/media/english/illustration/skull.jpg' %>
+<% end %>
+
+Specify that the link is a relative path
+<%= link_to 'About', '/about.html', :relative => true %>
+
+https://middlemanapp.com/basics/helper-methods/
